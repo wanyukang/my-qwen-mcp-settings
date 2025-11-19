@@ -1,0 +1,41 @@
+{
+    "mcpServers": {
+        "serena": {
+            "command": "/home/wanyukang/.local/bin/uv",
+            "args": [
+                "run",
+                "--directory",
+                "/home/wanyukang/git/serena",
+                "serena",
+                "start-mcp-server"
+            ],
+            "timeout": 5000
+        },
+        "context7": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@upstash/context7-mcp",
+                "--api-key",
+                "xxxx"
+            ]
+        },
+        "lark_open_doc_search": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@larksuiteoapi/lark-mcp",
+                "recall-developer-documents"
+            ]
+        }
+    },
+    "security": {
+        "auth": {
+            "selectedType": "qwen-oauth"
+        }
+    },
+    "ui": {
+        "theme": "GitHub"
+    },
+    "$version": 2
+}
